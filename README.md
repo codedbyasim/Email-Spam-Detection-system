@@ -1,10 +1,6 @@
-Great! Based on your uploaded Jupyter Notebook titled **"Email\_Spam\_Detection\_system\_using\_Naive\_Bayes"**, here is a professional `README.md` file for your GitHub repository:
-
----
-
 ## 📧 Email Spam Detection System using Naive Bayes
 
-This project is a simple yet effective **Spam Detection System** that uses the **Naive Bayes classifier** to classify emails as **spam** or **not spam**. It utilizes text preprocessing techniques, TF-IDF vectorization, and machine learning to build a spam filter based on the popular `spam.csv` dataset.
+This project is a simple yet effective spam detection system that utilises the naive Bayes classifier to classify emails as either spam or not spam. It utilizes text preprocessing techniques, TF-IDF vectorization, and machine learning to build a spam filter based on the popular `spam.csv` dataset.
 
 ---
 
@@ -28,7 +24,7 @@ This project is a simple yet effective **Spam Detection System** that uses the *
 
 * Text cleaning (punctuation removal, stopwords removal)
 * Text stemming using **PorterStemmer**
-* TF-IDF Vectorization
+* TF-IDF Vectorisation
 * Train-Test Split
 * Model Training & Evaluation
 * Performance metrics:
