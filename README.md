@@ -85,7 +85,7 @@ python app.py
 ```
 
 Then open your browser and visit:
-➡ [http://localhost:5000](http://localhost:5000)
+ [http://localhost:5000](http://localhost:5000)
 
 ---
 
