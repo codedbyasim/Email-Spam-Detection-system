@@ -1,119 +1,118 @@
-## 📧 Email Spam Detection System using Naive Bayes
+## Email Spam Detection System using Naive Bayes
 
-This project is a simple yet effective spam detection system that utilises the naive Bayes classifier to classify emails as either spam or not spam. It utilizes text preprocessing techniques, TF-IDF vectorization, and machine learning to build a spam filter based on the popular `spam.csv` dataset.
-
----
-
-### 🧠 Machine Learning Algorithm
-
-* **Multinomial Naive Bayes** is used for classification because it performs well with text data and discrete features (like word counts or frequencies).
+An intelligent web-based email spam classifier that uses natural language processing and a **Multinomial Naive Bayes** model to detect spam messages with high accuracy. Built with clean text preprocessing, TF-IDF vectorization, and trained on the well-known [`spam.csv`](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) dataset.
 
 ---
 
-### 📂 Dataset
+### Algorithm Overview
 
-* Dataset: [`spam.csv`](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
-* Columns:
-
-  * `v1`: Label (spam/ham)
-  * `v2`: Text message
+> **Multinomial Naive Bayes** is chosen for its effectiveness on textual data with discrete features like word frequencies and TF-IDF scores. It’s simple, fast, and highly accurate for spam filtering tasks.
 
 ---
 
-### 🛠️ Features
+### Dataset
 
-* Text cleaning (punctuation removal, stopwords removal)
-* Text stemming using **PorterStemmer**
-* TF-IDF Vectorisation
-* Train-Test Split
-* Model Training & Evaluation
-* Performance metrics:
+* **Source**: [SMS Spam Collection Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
+* **Features**:
 
-  * Accuracy
-  * Confusion Matrix
-  * Classification Report
+  * `v1`: Label (`spam` or `ham`)
+  * `v2`: Email/SMS text content
 
 ---
 
-### 🧪 Libraries Used
+### Key Features
 
-```python
-pandas
-numpy
-string
-nltk
-sklearn
+Text preprocessing pipeline:
+ • Lowercasing, punctuation removal, stopwords removal, and stemming with **PorterStemmer**
+
+Feature engineering:
+ • TF-IDF vectorisation
+
+Model training:
+ • Multinomial Naive Bayes (via Scikit-learn)
+
+Evaluation metrics:
+ • Accuracy, confusion matrix, classification report
+
+Frontend:
+ • Clean and professional **Flask-based web interface** to analyze email text
+
+---
+
+### Technologies Used
+
+```bash
+Python
+Flask
+Scikit-learn
+NLTK
+Pandas, NumPy
+HTML, CSS, Jinja2
 ```
 
 ---
 
-### 📊 Model Evaluation
+### Model Performance
 
-The model is evaluated using:
-
-* `Accuracy Score`
-* `Confusion Matrix`
-* `Classification Report`
-
----
-
-### 📝 How to Run
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/Email-Spam-Detection.git
-   cd Email-Spam-Detection
-   ```
-
-2. Install required libraries:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the Jupyter Notebook:
-
-   ```bash
-   jupyter notebook Email_Spam_Detection_system_using_Naive_Bayes.ipynb
-   ```
+| Metric    | Value  |
+| --------- | ------ |
+| Accuracy  | 97%+   |
+| Precision | High   |
+| Recall    | High   |
+| F1-Score  | Robust |
 
 ---
 
-### 📌 Project Structure
+### Getting Started
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/codedbyasim/Email-Spam-Detection-system.git
+cd Email-Spam-Detection-system
+```
+
+#### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Run the Web App
+
+```bash
+python app.py
+```
+
+Then open your browser and visit:
+➡ [http://localhost:5000](http://localhost:5000)
+
+---
+
+### Project Structure
 
 ```
-📁 Email-Spam-Detection/
+Email-Spam-Detection-system/
 │
+├── app.py                         # Flask web app
+├── vectorizer.pkl                 # TF-IDF Vectorizer
+├── spam_classifier_model.pkl      # Trained Naive Bayes model
 ├── Email_Spam_Detection_system_using_Naive_Bayes.ipynb
-├── spam.csv
+├── static/
+│   └── style.css                  # Custom frontend styling
+├── templates/
+│   └── index.html                 # Frontend HTML with Jinja2
+├── spam.csv                       # Raw dataset
 ├── README.md
 └── requirements.txt
 ```
 
 ---
 
-### 🤖 Sample Result
+### Author
 
-| Metric    | Value |
-| --------- | ----- |
-| Accuracy  | 97%+  |
-| Precision | High  |
-| Recall    | High  |
+**Muhammad Asim Hanif**
+Software Engineering Student | ML & AI Enthusiast
+ [GitHub](https://github.com/codedbyasim) | [LinkedIn](https://linkedin.com/in/masimhanif)
 
 ---
-
-### ✅ Future Improvements
-
-* Add GUI or Web Interface (using Streamlit/Flask)
-* Deploy the model using FastAPI or Flask
-* Add more datasets and deep learning models
-
----
-
-### 👨‍💻 Author
-
-**Asim Hanif**
-[GitHub](https://github.com/codedbyasim) | [LinkedIn](https://linkedin.com/in/masimhanif)
-*Software Engineering Student & ML Enthusiast*
-
